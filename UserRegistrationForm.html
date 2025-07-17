@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset><h1>USER REGISTRATION</h1></fieldset>
+        <br>
+        <table>
+            <tr>
+                <td>NAME : </td>
+                <td><input type="text" placeholder="Enter your name"></td>
+            </tr>
+            <tr>
+                <td>Password : </td>
+                <td><input type="password" placeholder="Enter the password"></td>
+            </tr>
+            <tr>
+                <td>Confirm Password : </td>
+                <td><input type="password" placeholder="Re-Enter the password"></td>
+            </tr>
+            <tr>
+                <td>E-mail : </td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td>Account Type : </td>
+                <td><input type="radio" id="java"><label for="java">Standard</label> 
+                    <input type="radio" id="html"><label for="html">Premium</label>
+                    <input type="radio" id="admin"><label for="admin">Admin</label></td>
+            </tr>
+            <tr>
+                <td>Preffered Language :  </td>
+                <td><select name="country" id="contry">
+                    <option value="India">English</option>
+                    <option value="US">Tamil</option>
+                    <option value="China">Chinese</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Notes : </td>
+                <td><textarea placeholder="Notes"></textarea></td>
+            </tr>
+        </table>
+        <center>
+        <button id="submit" onclick="prinTtext()">SUBMIT</button>
+        <h1 id="text1"></h1>
+    </form>
+    </center>
+    <script>
+        var text1 = document.getElementById("text1");
+        var submit = document.getElementById("submit");
+        function prinTtext(){
+            text1.textContent = "Form Successfully Submitted"
+        }
+    </script>
+</body>
+</html>
